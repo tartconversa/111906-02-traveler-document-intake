@@ -1,0 +1,129 @@
+{
+  "stages": [
+    {
+      "travelers": [
+        {
+          "id": "P-201",
+          "family": "F1",
+          "trip": "T1",
+          "purpose": "tour",
+          "delegate": "D1",
+          "delegate_until": "2026-12-31",
+          "required": {
+            "passport": "PP201-v1",
+            "guardian": "G1"
+          }
+        },
+        {
+          "id": "P-202",
+          "family": "F1",
+          "trip": "T1",
+          "purpose": "tour",
+          "delegate": "D1",
+          "delegate_until": "2026-10-01",
+          "required": {
+            "passport": "PP202-v1",
+            "guardian": "G1"
+          }
+        }
+      ],
+      "reviews": {},
+      "now": "2026-11-19"
+    },
+    {
+      "travelers": [
+        {
+          "id": "P-201",
+          "family": "F1",
+          "trip": "T1",
+          "purpose": "tour",
+          "delegate": "D1",
+          "delegate_until": "2026-12-31",
+          "required": {
+            "passport": "PP201-v2",
+            "guardian": "G1"
+          }
+        },
+        {
+          "id": "P-202",
+          "family": "F1",
+          "trip": "T2",
+          "purpose": "tour",
+          "delegate": "D1",
+          "delegate_until": "2026-12-31",
+          "required": {
+            "passport": "PP202-v1",
+            "guardian": "G1"
+          }
+        }
+      ],
+      "reviews": {
+        "passport": "needs_replacement",
+        "guardian": "accepted"
+      },
+      "now": "2026-11-19"
+    },
+    {
+      "travelers": [
+        {
+          "id": "P-201",
+          "family": "F1",
+          "trip": "T1",
+          "purpose": "tour",
+          "delegate": "D1",
+          "delegate_until": "2026-12-31",
+          "required": {
+            "passport": "PP201-v2",
+            "guardian": "G1"
+          }
+        },
+        {
+          "id": "P-202",
+          "family": "F1",
+          "trip": "T2",
+          "purpose": "tour",
+          "delegate": "D1",
+          "delegate_until": "2026-12-31",
+          "required": {
+            "passport": "PP202-v1",
+            "guardian": "G1"
+          }
+        }
+      ],
+      "reviews": {
+        "passport": "accepted",
+        "guardian": "accepted"
+      },
+      "now": "2026-11-19"
+    }
+  ],
+  "documents": {
+    "PP201-v1": {
+      "name": "passport.txt",
+      "traveler": "P-201",
+      "purpose": "tour",
+      "content": "合成护照 P-201 号码 FAKE-000201 第一版"
+    },
+    "PP201-v2": {
+      "name": "passport.txt",
+      "traveler": "P-201",
+      "purpose": "tour",
+      "content": "合成护照 P-201 号码 FAKE-000299 第二版"
+    },
+    "PP202-v1": {
+      "name": "passport.txt",
+      "traveler": "P-202",
+      "purpose": "tour",
+      "content": "合成护照 P-202 号码 FAKE-000202"
+    },
+    "G1": {
+      "name": "guardian.txt",
+      "travelers": [
+        "P-201",
+        "P-202"
+      ],
+      "purpose": "tour",
+      "content": "合成监护证明 F1 关联 P-201 P-202"
+    }
+  }
+}
